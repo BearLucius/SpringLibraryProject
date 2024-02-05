@@ -2,6 +2,9 @@ package com.LibraryProject.libraryProject.service;
 
 import com.LibraryProject.libraryProject.entity.BookEntity;
 import com.LibraryProject.libraryProject.repo.bookRepo; //Импорт интерфейса
+import org.springframework.stereotype.Service;
+
+@Service
 public class BookService {
     private final bookRepo repo;
 

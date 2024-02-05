@@ -22,12 +22,6 @@ public class BookEntity {
     //AuthorEntity
 
     // String - приколы
-
-    private String name;
-    private String surname;
-    private String lastname;
-
-
     private String namePublisher;
     private String cityPublisher;
 
