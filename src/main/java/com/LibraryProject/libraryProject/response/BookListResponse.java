@@ -2,14 +2,14 @@ package com.LibraryProject.libraryProject.response;
 
 import com.LibraryProject.libraryProject.entity.BookEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
-public class BookListResponse extends BaseResponse {
-    public BookListResponse(Iterable<BookEntity> data) {
-        super(true,"Книги");
+public class BookListResponse extends BaseResponse{
+
+    public BookListResponse(boolean success, String message, Iterable<BookEntity> data) {
+        super(success, message);
         this.data = data;
-    };
-    private Iterable<BookEntity> data;
+    }
+
+    private Iterable<BookEntity>data;
 }
